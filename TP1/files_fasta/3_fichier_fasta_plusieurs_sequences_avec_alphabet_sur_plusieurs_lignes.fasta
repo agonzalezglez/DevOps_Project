@@ -1,0 +1,21 @@
+> Sequence_1 (longueur: 30) avec des minuscules ;-)
+ACGCTAGCAT
+cagcgatcag
+CGATCTAGTG
+
+; Sequence_2 (longueur: 50) avec des symboles etendus
+CTBCACCTD
+CHHCACACV
+CACWSCACA
+RCAACYCAK
+CAMN.AAC-AC
+
+; Sequence_3 (longueur: 50) avec des espaces superflus et des commentaires
+  CTBCA CCTD
+
+     CHHC ACA CV
+ CACWSC ACA ; un commentaire debile
+rcaacycak
+CAMN.AAC-
+
+AC

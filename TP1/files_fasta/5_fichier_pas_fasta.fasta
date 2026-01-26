@@ -1,0 +1,6 @@
+Ici on écrit un texte qui n'est pas en format FASTA.
+
+Mais si on ajoute une citation markdown... Il peut croire que c'est du fasta.
+> Premier exemple
+> deuxieme example
+Ici il n'y a rien!

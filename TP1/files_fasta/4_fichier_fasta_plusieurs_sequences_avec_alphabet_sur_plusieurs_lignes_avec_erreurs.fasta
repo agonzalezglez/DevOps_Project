@@ -1,0 +1,25 @@
+> Sequence_1 (longueur: 30) avec des erreurs ;-)
+ACGCTxAGCAT
+cagcga@tcag
+CGATCTA>GTG
+
+Sequence_2 (longueur: 50) avec des symboles etendus
+CTBCACCTD
+CHHCACACV
+CACWSCACA
+RCAACYCAK
+CAMN.AAC-AC
+
+; Une ligne d'entete sans sequence
+; Ma_sequence_3 (longueur: 50) avec des espaces superflus 
+  CTBCA CCTD
+
+     CHHC ACA CV
+ CACWSC ACA ; un commentaire diff
+rcaacycak
+CAMN.AAC-
+
+AC
+
+> Des caractères UTF8 ça c'est drôle
+
