@@ -1,11 +1,11 @@
 CXX = g++
-PROG = read_file_fasta
+PROG = read_file_
 
 .PHONY: all clean
 
 all: $(PROG)
 
-read_file_fasta: read_file_fasta.cpp
+read_file_fasta: read_file_.cpp
 	$(CXX) $< -o $@
 
 clean:
