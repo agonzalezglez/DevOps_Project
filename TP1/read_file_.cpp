@@ -25,7 +25,7 @@ bool is_nucl(char c) {
 }
 
 int main() { 
-	const char* fichier = "./files_/1_fichier_fasta_simple_une_ligne.fasta"; //Path sauvegardé dans une variable et on peut tester sur les files_
+	const char* fichier = "./files/2_fichier_fasta_sur_plusieurs_lignes.fasta"; //Path sauvegardé dans une variable et on peut tester sur les files_
 	ifstream ifs (fichier); //Flux de fichier en lecture seule
 	// Variables pour suivre la position dans le fichier
 	int num_ligne = 0;
@@ -44,6 +44,7 @@ int main() {
 	while (ifs) {
         int c = ifs.get();
         if (c != -1) { //Vérifier qu'on n'est pas à la fin du fichier
+			bool ok = true;
 			// Cas d'un début de nouvelle séquence
             if (is_new_sequence((char)c, num_colonne)) {
 
@@ -70,18 +71,32 @@ int main() {
 			} 
 			else {
 				num_colonne++; // // Sinon, on avance d'une colonne
-			// Si on est dans une séquence, on compte les caractères non blancs
-                if (has_sequence && is_nucl((char)c)) {
-                    taille++;
-                }
-            }
-        }
-    }
+				// Si c'est un nucléotide valide
+    			if (is_nucl((char)c)) {
+        			if (has_sequence) {
+            			taille++;
+        			} else {
+            			ok = false; // nucléotide avant entête qui donne erreur
+        			}
+				}
+				// Si ce n'est pas un espace
+				else if (!is_space((char)c)) {
+        			ok = false; // caractère inconnu
+    			}
+			}
+    		if (!ok) {
+        		cerr << "Caractère invalide '" << (char)c 
+            		<< "' à la ligne " << num_ligne
+			 		<< ", colonne " << num_colonne << endl;
+			}
+		}
+	}
 	// Affichage de la dernière séquence lue
     if (has_sequence) {
         cout << "Fin de la séquence '" << entete
              << "' de taille " << taille << endl;
     }
+
 	cout << "Fin de la lecture du fichier." << endl; //Fin du programme
 	return 0;
 } //Fin
