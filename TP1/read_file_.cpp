@@ -3,7 +3,6 @@
 #include <limits>
 #include <string>
 
-
 using namespace std; //Fonctionnalité pour éviter de écrire std::cout etc ....
 
 // Vérifie si le caractère correspond à un espace ou à un retour à la ligne
@@ -14,6 +13,15 @@ bool is_space(char c) {
 // Vérifie si le caractère correspond au début d'une nouvelle séquence FASTA
 bool is_new_sequence(char c, int num_colonne) {
     return (num_colonne == 0) && (c == '>');
+}
+// Vérifie si le caractère correspond à un nucléotide  (A, C, G, T, U)
+bool is_nucl(char c) {
+    // Conversion en majuscule si nécessaire
+    if (c >= 'a' && c <= 'z') {
+        c = c - ('a' - 'A');
+    }
+
+    return (c == 'A' || c == 'C' || c == 'G' || c == 'T' || c == 'U');
 }
 
 int main() { 
@@ -63,7 +71,7 @@ int main() {
 			else {
 				num_colonne++; // // Sinon, on avance d'une colonne
 			// Si on est dans une séquence, on compte les caractères non blancs
-                if (has_sequence && !is_space((char)c)) {
+                if (has_sequence && is_nucl((char)c)) {
                     taille++;
                 }
             }
@@ -76,5 +84,5 @@ int main() {
     }
 	cout << "Fin de la lecture du fichier." << endl; //Fin du programme
 	return 0;
-}
+} //Fin
 
