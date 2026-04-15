@@ -1,0 +1,16 @@
+digraph "BiologicalSequence::setSequence"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="BiologicalSequence\l::setSequence",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Set biological sequence."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="cleanSequence",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$biological__sequence_8cpp.html#a67f4b149e8c6ea2d5eb643e17ef2cf52",tooltip="Remove whitespace from a sequence and convert it to uppercase."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="BiologicalSequence\l::setType",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_biological_sequence.html#a367cbc14bd140d9003ff485b2129cdc6",tooltip="Set biological type if it is compatible with the sequence."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="BiologicalSequence\l::isValid",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_biological_sequence.html#a2be2b9bbec7cc007bd7e52d78f4f2a56",tooltip="Check whether a character is valid for the current type."];
+  Node4 -> Node4 [id="edge4_Node000004_Node000004",color="steelblue1",style="solid",tooltip=" "];
+}

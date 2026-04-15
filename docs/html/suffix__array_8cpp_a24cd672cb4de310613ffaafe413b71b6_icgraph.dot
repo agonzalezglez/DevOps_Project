@@ -1,0 +1,25 @@
+digraph "_compareStrings"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="_compareStrings",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Compare two substrings starting at given positions."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="SuffixArray::_findOccurrence",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_suffix_array.html#ab1ae4c1933b0c795258fb6b869c577ad",tooltip="Find one occurrence of a query in the suffix array."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="SuffixArray::contains",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_suffix_array.html#a706007c1cef79b681fc716450b942559",tooltip="Check whether a pattern appears in the reference."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$table__suffixes_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip="Main function for suffix array testing."];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="SuffixArray::nbOccurrences",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_suffix_array.html#ae2cb3f79e91f9ec6fc039ad5bc79ab6d",tooltip="Count exact occurrences of a pattern."];
+  Node5 -> Node4 [id="edge5_Node000005_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node6 [id="edge6_Node000002_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="SuffixArray::occurrences",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_suffix_array.html#a3e99665ad14418134c98c754112cf777",tooltip="Return all exact occurrence positions of a pattern."];
+  Node6 -> Node4 [id="edge7_Node000006_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node7 [id="edge8_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="SuffixComparator::operator()",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$struct_suffix_comparator.html#ab4f9e69aec00ea65ea7cf0380652b7e3",tooltip="Compare two suffix start positions."];
+  Node1 -> Node8 [id="edge9_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="SuffixArray::SuffixArray",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_suffix_array.html#a1918692349753960967d47829973fada",tooltip="Construct a suffix array from a reference string."];
+}

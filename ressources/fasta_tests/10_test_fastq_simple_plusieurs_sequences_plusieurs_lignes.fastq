@@ -1,0 +1,31 @@
+@ sequence 1 (2 lignes, 10 symboles par ligne)
+AACCGGTTAA
+CCGGTTAACC
++ sequence 1 (2 lignes, 10 symboles par ligne)
+-"'e(=r-uy
+fcy(er-tog
+
+@ sequence 2 (3 lignes, 10 symboles pour les deux premières, 5 symboles pour la dernière)
+CCGGTTAACC
+GGTTAACCGG
+CCTTA
++ sequence 2
+&"'(-_)^@p
+oiuhyjgtrf
+@sdfc
+
+@ sequence 3 (3 lignes, 12 symboles pour les deux premières avec 2 erreurs, 5 symboles pour la dernière avec une erreur [un méchant '@'] et des espaces un peu partout)
+C@CGG TTAA CZC
+
+  GG	TTA  AC+C&GG
+    
+@CCTTA
+
++
+
++" '(-_)^	@p
+   
+ @iu  hyj gtrf
+
+@sdfc
+

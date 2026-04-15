@@ -1,0 +1,13 @@
+digraph "EncodedSequence::decode"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="EncodedSequence::decode",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Decode the stored sequence."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="EncodedSequence::at",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_encoded_sequence.html#ad1dce351fbde676103ca0c92f10c4fb1",tooltip="Access a nucleotide at a given position."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="EncodedSequence::decodeNucleotide",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_encoded_sequence.html#aeddc6f5098caef83752df79c24462940",tooltip="Decode a 2-bit code into a nucleotide."];
+}

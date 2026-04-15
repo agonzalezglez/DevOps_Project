@@ -1,0 +1,11 @@
+digraph "BiologicalSequence::isExtendedRNA"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="BiologicalSequence\l::isExtendedRNA",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Check whether a character belongs to the extended RNA alphabet."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="BiologicalSequence\l::isValid",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_biological_sequence.html#a306002b8fb40a69b9127cd70dc078371",tooltip="Check whether a character is valid for a specific type."];
+}

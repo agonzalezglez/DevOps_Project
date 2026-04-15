@@ -1,0 +1,15 @@
+digraph "FastaFileReader::isValidFormat"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="FastaFileReader::isValid\lFormat",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Check whether the current file appears to be in FASTA format."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="is_fasta_header_line",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$fasta__file__reader_8cpp.html#aecfa27e07120a41f22f599a893424bda",tooltip="Check whether a line is a FASTA header."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="FileReader::line",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_file_reader.html#a0758f823f99f397390b607d19d281dc0",tooltip="Get current line number."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="trim_fasta",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$fasta__file__reader_8cpp.html#a409c822542da61f49ac8893739b079fb",tooltip="Remove leading and trailing whitespace from a FASTA line."];
+}

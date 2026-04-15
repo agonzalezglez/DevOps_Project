@@ -1,0 +1,16 @@
+digraph "SuffixArray::_findLastOccurrence"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="SuffixArray::_findLastOccurrence",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Find the last occurrence interval boundary."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="SuffixArray::nbOccurrences",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_suffix_array.html#ae2cb3f79e91f9ec6fc039ad5bc79ab6d",tooltip="Count exact occurrences of a pattern."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$table__suffixes_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip="Main function for suffix array testing."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="SuffixArray::occurrences",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_suffix_array.html#a3e99665ad14418134c98c754112cf777",tooltip="Return all exact occurrence positions of a pattern."];
+  Node4 -> Node3 [id="edge4_Node000004_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}
